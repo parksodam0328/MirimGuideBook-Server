@@ -1,4 +1,5 @@
 <?
+header("Content-Type: text/html; charset=UTF-8");
 	include "php/config.php";	//Session 및 DB 연결설정
 	include "php/util.php";		//각종 유틸리티 함수
 	

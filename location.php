@@ -14,7 +14,7 @@
 -->
 <html>
 	<head>
-		<title>동아리 관리</title>
+		<title>위치 관리</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -72,10 +72,10 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Club</h1>
+							<h1>Location</h1>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 							<center>
-							<form name="form1" method="post" action="club_check.php">
+							<form name="form1" method="post" action="location_check.php">
 								<table>
 									<tr>
 										<td>
@@ -83,22 +83,74 @@
 												<tr>
 													<td colspan="7">
 														<font size="6"><a href="php_admin.php"><b>HOME</b></a>
-														&gt; Club</font>
+														&gt; Location</font>
 												</tr>
 										<tr>
 											<td>구분번호</td>
 											<td><input type="text" name="number"></td>
 										</tr>
 										<tr>
-											<td>동아리명</td>
-											<td><input type="text" name="club_name"></td>
+											<td colspan="7">외부위치</td>
 										</tr>
 										<tr>
-											<td>동아리실</td>
-											<td><input type="text" name="club_room"></td>
+											<td>주소</td>
+											<td><input type="text" name="address"></td>
 										</tr>
 										<tr>
-											<td>담당교사</td>
+											<td>우편번호</td>
+											<td><input type="text" name="code"></td>
+										</tr>
+										<tr>
+											<td>취업부</td>
+											<td><input type="text" name="telEmploy"></td>
+										</tr>
+										<tr>
+											<td>교무부</td>
+											<td><input type="text" name="telTeacher"></td>
+										</tr>
+										<tr>
+											<td>행정실</td>
+											<td><input type="text" name="telAdmin"></td>
+										</tr>
+										<tr>
+											<td>취업fax</td>
+											<td><input type="text" name="faxEmploy"></td>
+										</tr>
+										<tr>
+											<td>교무fax</td>
+											<td><input type="text" name="faxTeacher"></td>
+										</tr>
+										<tr>
+											<td>행정fax</td>
+											<td><input type="text" name="faxAdmin"></td>
+										</tr>
+										<tr>
+											<td>대중교통<br>
+											(지하철)</td>
+											<td><input type="text" name="subway"></td>
+										</tr>
+										<tr>
+											<td>대중교통<br>
+											(버스)</td>
+											<td><input type="text" name="bus"></td>
+										</tr>
+										<tr>
+											<td>약도이미지</td>
+											<td><input type="file" name="location_image"></td>
+										</tr>
+										<tr>
+											<td colspan="7">내부위치</td>
+										</tr>
+										<tr>
+											<td>교무실이름</td>
+											<td><input type="text" name="school_office"></td>
+										</tr>
+										<tr>
+											<td>층</td>
+											<td><input type="text" name="floor"></td>
+										</tr>
+										<tr>
+											<td>선생님</td>
 											<td><input type="text" name="teacher"></td>
 										</tr>
 										<tr>
@@ -108,7 +160,7 @@
 										<tr>
 											<td colspan="7">
 											<center>
-											<a href="javascript:checkClubInput()"><img src="img/butn_ok.gif"></a>
+											<a href="javascript:checkLocationInput()"><img src="img/butn_ok.gif"></a>
 											<a href="php_admin.php">
 											<img src="img/btn_cancel.gif"></a>
 											</center>

@@ -7,11 +7,15 @@ header("Content-Type: text/html; charset=UTF-8");
 	//mysql 연결
 	$connect = my_connect($host, $dbid, $dbpass, $dbname);
 
-	$intro = addslashes($intro);
+	$word = addslashes($word);
+	$coding = addslashes($coding);
+	$result = addslashes($result);
+	$mean = addslashes($mean);
+
 	mysql_query("SET NAMES utf8");
 
-$query = "insert into club(number, club_name, club_room, teacher, intro)
-values('$number','$club_name','$club_room','$teacher','$intro')"; 
+$query = "insert into experience(major, word, coding, result,mean)
+values('$major','$word','$coding','$result','$mean')"; 
 
 $result = mysql_query($query, $connect) or die(mysql_error());
 
@@ -22,7 +26,7 @@ else {
 	echo "<script>
 			window.alert('정상적으로 값이 입력되었습니다.');
 		</script>";
-echo "<meta http-equiv='Refresh' content='0;url=club.php'>";
+echo "<meta http-equiv='Refresh' content='0;url=experience.php'>";
 }
 
 ?>

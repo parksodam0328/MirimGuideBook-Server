@@ -14,7 +14,7 @@
 -->
 <html>
 	<head>
-		<title>동아리 관리</title>
+		<title>취업 관리</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -72,10 +72,10 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Club</h1>
+							<h1>Employment</h1>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 							<center>
-							<form name="form1" method="post" action="club_check.php">
+							<form name="form1" method="post" action="employment_check.php">
 								<table>
 									<tr>
 										<td>
@@ -83,32 +83,32 @@
 												<tr>
 													<td colspan="7">
 														<font size="6"><a href="php_admin.php"><b>HOME</b></a>
-														&gt; Club</font>
+														&gt; Employment</font>
 												</tr>
 										<tr>
-											<td>구분번호</td>
-											<td><input type="text" name="number"></td>
+											<td>년도</td>
+											<td><input type="text" name="year"></td>
 										</tr>
 										<tr>
-											<td>동아리명</td>
-											<td><input type="text" name="club_name"></td>
+											<td>취업현황</td>
+											<td><input type="text" name="employ_now"></td>
 										</tr>
 										<tr>
-											<td>동아리실</td>
-											<td><input type="text" name="club_room"></td>
+											<td>회사명</td>
+											<td><input type="text" name="company_name"></td>
 										</tr>
 										<tr>
-											<td>담당교사</td>
-											<td><input type="text" name="teacher"></td>
+											<td>분야</td>
+											<td><input type="text" name="field"></td>
 										</tr>
 										<tr>
-											<td>소개</td>
-											<td><textarea type="text" name="intro" cols="50" rows="15"></textarea></td>
+											<td>홈페이지주소</td>
+											<td><input type="text" name="website"></td>
 										</tr>
 										<tr>
 											<td colspan="7">
 											<center>
-											<a href="javascript:checkClubInput()"><img src="img/butn_ok.gif"></a>
+											<a href="javascript:checkEmploymentInput()"><img src="img/butn_ok.gif"></a>
 											<a href="php_admin.php">
 											<img src="img/btn_cancel.gif"></a>
 											</center>

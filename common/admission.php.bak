@@ -14,7 +14,7 @@
 -->
 <html>
 	<head>
-		<title>동아리 관리</title>
+		<title>위치 관리</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -72,10 +72,10 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Club</h1>
+							<h1>Location</h1>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 							<center>
-							<form name="form1" method="post" action="club_check.php">
+							<form name="form1" method="post" action="admission_check.php">
 								<table>
 									<tr>
 										<td>
@@ -83,32 +83,65 @@
 												<tr>
 													<td colspan="7">
 														<font size="6"><a href="php_admin.php"><b>HOME</b></a>
-														&gt; Club</font>
+														&gt; Admission</font>
 												</tr>
+										<tr>
+											<td colspan="7">학과</td>
+										</tr>
 										<tr>
 											<td>구분번호</td>
 											<td><input type="text" name="number"></td>
 										</tr>
 										<tr>
-											<td>동아리명</td>
-											<td><input type="text" name="club_name"></td>
+											<td>학과이름</td>
+											<td><input type="text" name="major"></td>
 										</tr>
 										<tr>
-											<td>동아리실</td>
-											<td><input type="text" name="club_room"></td>
+											<td>학과소개</td>
+											<td><textarea type="text" name="major_intro"></textarea></td>
 										</tr>
 										<tr>
-											<td>담당교사</td>
-											<td><input type="text" name="teacher"></td>
+											<td>학과이미지</td>
+											<td><input type="file" name="major_image"></td>
 										</tr>
 										<tr>
-											<td>소개</td>
-											<td><textarea type="text" name="intro" cols="50" rows="15"></textarea></td>
+											<td colspan="7">설명회</td>
+										</tr>
+										<tr>
+											<td>장소</td>
+											<td><input type="text" name="room"></td>
+										</tr>
+										<tr>
+											<td>날짜</td>
+											<td><input type="text" name="date"></td>
+										</tr>
+										<tr>
+											<td>신청방법</td>
+											<td><input type="text" name="apply"></td>
+										</tr>
+										<tr>
+											<td>포스터</td>
+											<td><input type="file" name="poster"></td>
+										</tr>
+										<tr>
+											<td colspan="7">FAQ</td>
+										</tr>
+										<tr>
+											<td>번호</td>
+											<td><input type="text" name="apply_number"></td>
+										</tr>
+										<tr>
+											<td>제목</td>
+											<td><input type="text" name="title"></td>
+										</tr>
+										<tr>
+											<td>내용</td>
+											<td><textarea type="text" name="content" cols="50" rows="15"></textarea></td>
 										</tr>
 										<tr>
 											<td colspan="7">
 											<center>
-											<a href="javascript:checkClubInput()"><img src="img/butn_ok.gif"></a>
+											<a href="javascript:checkAdmissionInput()"><img src="img/butn_ok.gif"></a>
 											<a href="php_admin.php">
 											<img src="img/btn_cancel.gif"></a>
 											</center>

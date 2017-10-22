@@ -72,10 +72,10 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Club</h1>
+							<h1>Event</h1>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 							<center>
-							<form name="form1" method="post" action="club_check.php">
+							<form name="form1" method="post" action="event_check.php">
 								<table>
 									<tr>
 										<td>
@@ -83,32 +83,29 @@
 												<tr>
 													<td colspan="7">
 														<font size="6"><a href="php_admin.php"><b>HOME</b></a>
-														&gt; Club</font>
+														&gt; Event</font>
 												</tr>
 										<tr>
-											<td>구분번호</td>
-											<td><input type="text" name="number"></td>
+											<td>이미지<br>
+											<font size="2">(없으면 기본 이미지 삽입)</font></td>
+											<td><input type="file" name="event_image"></td>
 										</tr>
 										<tr>
-											<td>동아리명</td>
-											<td><input type="text" name="club_name"></td>
+											<td>행사명</td>
+											<td><input type="text" name="event_name"></td>
 										</tr>
 										<tr>
-											<td>동아리실</td>
-											<td><input type="text" name="club_room"></td>
+											<td>날짜</td>
+											<td><input type="text" name="date"></td>
 										</tr>
 										<tr>
-											<td>담당교사</td>
-											<td><input type="text" name="teacher"></td>
-										</tr>
-										<tr>
-											<td>소개</td>
-											<td><textarea type="text" name="intro" cols="50" rows="15"></textarea></td>
+											<td>내용</td>
+											<td><textarea type="text" name="content" cols="50" rows="15"><textarea></td>
 										</tr>
 										<tr>
 											<td colspan="7">
 											<center>
-											<a href="javascript:checkClubInput()"><img src="img/butn_ok.gif"></a>
+											<a href="javascript:checkEventInput()"><img src="img/butn_ok.gif"></a>
 											<a href="php_admin.php">
 											<img src="img/btn_cancel.gif"></a>
 											</center>
