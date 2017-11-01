@@ -34,7 +34,7 @@
 
 							<!-- Logo -->
 								<a href="php_admin.php" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Mirim Guide Book</span>
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Mirim Guide Book</span>
 								</a>
 
 							<!-- Nav -->
@@ -51,12 +51,12 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="intro.php">Introduce</a></li>
+							<li><a href="https://www.e-mirim.hs.kr/renewal/main.jsp">Introduce</a></li>
 							<li><a href="subject.php">Subject</a></li>
 							<li><a href="rule.php">Rule</a></li>
 							<li><a href="club.php">Club</a></li>
 							<li><a href="location.php">Location</a></li>
-							<li><a href="admission.php">Admission</a></li>
+							<li><a href="entrance.php">Entrance</a></li>
 							<li><a href="experience.php">Experience</a></li>
 							<li><a href="employment.php">Employment</a></li>
 							<li><a href="event.php">Event</a></li>
@@ -68,23 +68,23 @@
 						<div class="inner">
 							<header>
 								<h1>미림가이드북 관리자 페이지<br/></h1>
-								<p align="right"><b><a href="https://www.e-mirim.hs.kr/renewal/main.jsp">미림여자정보과학고등학교</a>로 가기</b></p>
+								
 							</header>
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
+										<img src="images/school.png" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="https://www.e-mirim.hs.kr/renewal/main.jsp">
 										<h2>Mirim Guide Book</h2>
 										<div class="content">
-											<p>소개</p>
+											
 										</div>
 									</a>
 								</article>
 								<article class="style2">
 									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
+										<img src="images/subject.png" alt="" />
 									</span>
 									<a href="subject.php">
 										<h2>Subject</h2>
@@ -95,7 +95,7 @@
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
+										<img src="images/rule.png" alt="" />
 									</span>
 									<a href="rule.php">
 										<h2>Rule</h2>
@@ -106,7 +106,7 @@
 								</article>
 								<article class="style4">
 									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
+										<img src="images/club.png" alt="" />
 									</span>
 									<a href="club.php">
 										<h2>Club</h2>
@@ -117,7 +117,7 @@
 								</article>
 								<article class="style5">
 									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
+										<img src="images/location.png" alt="" />
 									</span>
 									<a href="location.php">
 										<h2>Location</h2>
@@ -128,10 +128,10 @@
 								</article>
 								<article class="style6">
 									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
+										<img src="images/entrance.png" alt="" />
 									</span>
-									<a href="admission.php">
-										<h2>Admission</h2>
+									<a href="entrance.php">
+										<h2>Entrance</h2>
 										<div class="content">
 											<p>입학</p>
 										</div>
@@ -139,7 +139,7 @@
 								</article>
 								<article class="style2">
 									<span class="image">
-										<img src="images/pic07.jpg" alt="" />
+										<img src="images/experience.png" alt="" />
 									</span>
 									<a href="experience.php">
 										<h2>Experience</h2>
@@ -150,7 +150,7 @@
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/pic08.jpg" alt="" />
+										<img src="images/employment.png" alt="" />
 									</span>
 									<a href="employment.php">
 										<h2>Employment</h2>
@@ -161,7 +161,7 @@
 								</article>
 								<article class="style1">
 									<span class="image">
-										<img src="images/pic09.jpg" alt="" />
+										<img src="images/event.png" alt="" />
 									</span>
 									<a href="event.php">
 										<h2>Event</h2>

@@ -1,6 +1,8 @@
 <?
 	include "php/config.php";	//Session 및 DB 연결설정
 	include "php/util.php";		//각종 유틸리티 함수
+	include "php/auth.php";
+
 	
 	//mysql 연결
 	$connect = my_connect($host, $dbid, $dbpass, $dbname);
@@ -40,7 +42,7 @@
 
 							<!-- Logo -->
 								<a href="php_admin.php" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Mirim Guide Book</span>
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Mirim Guide Book</span>
 								</a>
 
 							<!-- Nav -->
@@ -62,7 +64,7 @@
 							<li><a href="rule.php">Rule</a></li>
 							<li><a href="club.php">Club</a></li>
 							<li><a href="location.php">Location</a></li>
-							<li><a href="admission.php">Admission</a></li>
+							<li><a href="entrance.php">Entrance</a></li>
 							<li><a href="experience.php">Experience</a></li>
 							<li><a href="employment.php">Employment</a></li>
 							<li><a href="event.php">Event</a></li>
@@ -75,14 +77,14 @@
 							<h1>Employment</h1>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 							<center>
-							<form name="form1" method="post" action="employment_check.php">
+							<form name="form1" method="post" action="employment_check1.php">
 								<table>
 									<tr>
 										<td>
 											<table width="100%">
 												<tr>
 													<td colspan="7">
-														<font size="6"><a href="php_admin.php"><b>HOME</b></a>
+														<font size="6"><a href="php_admin.php"><b>Mirim Guide Book</b></a>
 														&gt; Employment</font>
 												</tr>
 										<tr>
@@ -93,6 +95,25 @@
 											<td>취업현황</td>
 											<td><input type="text" name="employ_now"></td>
 										</tr>
+										<tr>
+											<td colspan="7">
+											<center>
+											<a href="javascript:checkEmploymentInput1()"><input type="button" value="확인"></a>
+											<a href="employment1_list.php">
+											<input type="button" value="목록"></a>
+											<a href="php_admin.php">
+											<input type="button" value="취소"></a>
+											</center>
+											</td>
+										</tr>
+										</table>
+									</table>
+								</form>
+								<form name="form2" method="post" action="employment_check2.php">
+								<table>
+									<tr>
+										<td>
+											<table width="100%">
 										<tr>
 											<td>회사명</td>
 											<td><input type="text" name="company_name"></td>
@@ -108,9 +129,11 @@
 										<tr>
 											<td colspan="7">
 											<center>
-											<a href="javascript:checkEmploymentInput()"><img src="img/butn_ok.gif"></a>
+											<a href="javascript:checkEmploymentInput2()"><input type="button" value="확인"></a>
+											<a href="employment2_list.php">
+											<input type="button" value="목록"></a>
 											<a href="php_admin.php">
-											<img src="img/btn_cancel.gif"></a>
+											<input type="button" value="취소"></a>
 											</center>
 											</td>
 										</tr>

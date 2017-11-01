@@ -1,4 +1,5 @@
 <?
+	include "php/auth.php";
 	include "php/config.php";	//Session 및 DB 연결설정
 	include "php/util.php";		//각종 유틸리티 함수
 	
@@ -40,7 +41,7 @@
 
 							<!-- Logo -->
 								<a href="php_admin.php" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Mirim Guide Book</span>
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Mirim Guide Book</span>
 								</a>
 
 							<!-- Nav -->
@@ -57,12 +58,12 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="intro.php">Introduce</a></li>
+							<li><a href="https://www.e-mirim.hs.kr/renewal/main.jsp">Introduce</a></li>
 							<li><a href="subject.php">Subject</a></li>
 							<li><a href="rule.php">Rule</a></li>
 							<li><a href="club.php">Club</a></li>
 							<li><a href="location.php">Location</a></li>
-							<li><a href="admission.php">Admission</a></li>
+							<li><a href="entrance.php">Entrance</a></li>
 							<li><a href="experience.php">Experience</a></li>
 							<li><a href="employment.php">Employment</a></li>
 							<li><a href="event.php">Event</a></li>
@@ -75,14 +76,14 @@
 							<h1>Experience</h1>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 							<center>
-							<form name="form1" method="post" action="experience_check.php">
+							<form name="form1" method="post" action="experience_check1.php">
 								<table>
 									<tr>
 										<td>
 											<table width="100%">
 												<tr>
 													<td colspan="7">
-														<font size="6"><a href="php_admin.php"><b>HOME</b></a>
+														<font size="6"><a href="php_admin.php"><b>Mirim Guide Book</b></a>
 														&gt; Experience</font>
 												</tr>
 										<tr>
@@ -95,11 +96,34 @@
 										</tr>
 										<tr>
 											<td>용어 뜻</td>
-											<td><input type="text" name="mean"></td>
+											<td><input type="text" name="means"></td>
+										</tr>
+										<tr>
+											<td colspan="7">
+											<center>
+											<a href="javascript:checkExperienceInput1()"><input type="button" value="확인"></a>
+											<a href="experience1_list.php">
+											<input type="button" value="목록"></a>
+											<a href="php_admin.php">
+											<input type="button" value="취소"></a>
+											</center>
+											</td>
+										</tr>
+										</table>
+									</table>
+								</form>
+								<form name="form2" method="post" action="experience_check2.php">
+								<table>
+									<tr>
+										<td>
+											<table width="100%">
+										<tr>
+											<td>계열</td>
+											<td><input type="text" name="major"></td>
 										</tr>
 										<tr>
 											<td>코딩연습<br>
-											<font size="2">(코드 입력시 결과도 같이 입력)</font></td>
+											<font size="2px">(코드 입력시 결과도 같이 입력)</font></td>
 											<td><textarea type="text" name="coding"></textarea></td>
 										</tr>
 										<tr>
@@ -109,9 +133,11 @@
 										<tr>
 											<td colspan="7">
 											<center>
-											<a href="javascript:checkExperienceInput()"><img src="img/butn_ok.gif"></a>
+											<a href="javascript:checkExperienceInput2()"><input type="button" value="확인"></a>
+											<a href="experience2_list.php">
+											<input type="button" value="목록"></a>
 											<a href="php_admin.php">
-											<img src="img/btn_cancel.gif"></a>
+											<input type="button" value="취소"></a>
 											</center>
 											</td>
 										</tr>

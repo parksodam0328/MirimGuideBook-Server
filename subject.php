@@ -1,4 +1,5 @@
 <?
+	include "php/auth.php";
 	include "php/config.php";	//Session 및 DB 연결설정
 	include "php/util.php";		//각종 유틸리티 함수
 	
@@ -40,7 +41,7 @@
 
 							<!-- Logo -->
 								<a href="php_admin.php" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Mirim Guide Book</span>
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Mirim Guide Book</span>
 								</a>
 
 							<!-- Nav -->
@@ -57,12 +58,12 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="intro.php">Introduce</a></li>
+							<li><a href="https://www.e-mirim.hs.kr/renewal/main.jsp">Introduce</a></li>
 							<li><a href="subject.php">Subject</a></li>
 							<li><a href="rule.php">Rule</a></li>
 							<li><a href="club.php">Club</a></li>
 							<li><a href="location.php">Location</a></li>
-							<li><a href="admission.php">Admission</a></li>
+							<li><a href="entrance.php">Entrance</a></li>
 							<li><a href="experience.php">Experience</a></li>
 							<li><a href="employment.php">Employment</a></li>
 							<li><a href="event.php">Event</a></li>
@@ -82,7 +83,7 @@
 											<table width="100%">
 												<tr>
 													<td colspan="7">
-														<font size="6"><a href="php_admin.php"><b>HOME</b></a>
+														<font size="6"><a href="php_admin.php"><b>Mirim Guide Book</b></a>
 														&gt; Subject</font>
 												</tr>
 										<tr>
@@ -109,12 +110,13 @@
 											<td>실습실 위치</td>
 											<td><input type="text" name="room"></td>
 										</tr>
-										<tr>
-											<td colspan="7">
+										<td colspan="7">
 											<center>
-											<a href="javascript:checkSubjectInput()"><img src="img/butn_ok.gif"></a>
+											<a href="javascript:checkSubjectInput()"><input type="button" value="확인"></a>
+											<a href="subject_list.php">
+											<input type="button" value="목록"></a>
 											<a href="php_admin.php">
-											<img src="img/btn_cancel.gif"></a>
+											<input type="button" value="취소"></a>
 											</center>
 											</td>
 										</tr>

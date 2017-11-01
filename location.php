@@ -1,4 +1,5 @@
 <?
+	include "php/auth.php";
 	include "php/config.php";	//Session 및 DB 연결설정
 	include "php/util.php";		//각종 유틸리티 함수
 	
@@ -40,7 +41,7 @@
 
 							<!-- Logo -->
 								<a href="php_admin.php" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Mirim Guide Book</span>
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Mirim Guide Book</span>
 								</a>
 
 							<!-- Nav -->
@@ -57,12 +58,12 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="intro.php">Introduce</a></li>
+							<li><a href="https://www.e-mirim.hs.kr/renewal/main.jsp">Introduce</a></li>
 							<li><a href="subject.php">Subject</a></li>
 							<li><a href="rule.php">Rule</a></li>
 							<li><a href="club.php">Club</a></li>
 							<li><a href="location.php">Location</a></li>
-							<li><a href="admission.php">Admission</a></li>
+							<li><a href="entrance.php">Entrance</a></li>
 							<li><a href="experience.php">Experience</a></li>
 							<li><a href="employment.php">Employment</a></li>
 							<li><a href="event.php">Event</a></li>
@@ -75,94 +76,42 @@
 							<h1>Location</h1>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 							<center>
-							<form name="form1" method="post" action="location_check.php">
+							<form name="form1" method="post" action="location1_check.php" enctype = "multipart/form-data">
 								<table>
 									<tr>
 										<td>
 											<table width="100%">
 												<tr>
 													<td colspan="7">
-														<font size="6"><a href="php_admin.php"><b>HOME</b></a>
+														<font size="6"><a href="php_admin.php"><b>Mirim Guide Book</b></a>
 														&gt; Location</font>
 												</tr>
-										<tr>
-											<td>구분번호</td>
-											<td><input type="text" name="number"></td>
-										</tr>
-										<tr>
-											<td colspan="7">외부위치</td>
-										</tr>
 										<tr>
 											<td>주소</td>
 											<td><input type="text" name="address"></td>
 										</tr>
 										<tr>
-											<td>우편번호</td>
-											<td><input type="text" name="code"></td>
-										</tr>
-										<tr>
-											<td>취업부</td>
-											<td><input type="text" name="telEmploy"></td>
-										</tr>
-										<tr>
-											<td>교무부</td>
-											<td><input type="text" name="telTeacher"></td>
-										</tr>
-										<tr>
-											<td>행정실</td>
-											<td><input type="text" name="telAdmin"></td>
-										</tr>
-										<tr>
-											<td>취업fax</td>
-											<td><input type="text" name="faxEmploy"></td>
-										</tr>
-										<tr>
-											<td>교무fax</td>
-											<td><input type="text" name="faxTeacher"></td>
-										</tr>
-										<tr>
-											<td>행정fax</td>
-											<td><input type="text" name="faxAdmin"></td>
-										</tr>
-										<tr>
 											<td>대중교통<br>
-											(지하철)</td>
+											<font size="2">(지하철)</td>
 											<td><input type="text" name="subway"></td>
 										</tr>
 										<tr>
 											<td>대중교통<br>
-											(버스)</td>
+											<font size="2">(버스)</font></td>
 											<td><input type="text" name="bus"></td>
 										</tr>
 										<tr>
-											<td>약도이미지</td>
-											<td><input type="file" name="location_image"></td>
-										</tr>
-										<tr>
-											<td colspan="7">내부위치</td>
-										</tr>
-										<tr>
-											<td>교무실이름</td>
-											<td><input type="text" name="school_office"></td>
-										</tr>
-										<tr>
-											<td>층</td>
-											<td><input type="text" name="floor"></td>
-										</tr>
-										<tr>
-											<td>선생님</td>
-											<td><input type="text" name="teacher"></td>
-										</tr>
-										<tr>
-											<td>소개</td>
-											<td><textarea type="text" name="intro" cols="50" rows="15"></textarea></td>
+											<td>약도 이미지</td>
+											<td><input type="file" name="image_location"></td>
 										</tr>
 										<tr>
 											<td colspan="7">
 											<center>
-											<a href="javascript:checkLocationInput()"><img src="img/butn_ok.gif"></a>
+											<a href="javascript:checkLocationInput1()"><input type="button" value="확인"></a>
+											<a href="location1_list.php">
+											<input type="button" value="목록"></a>
 											<a href="php_admin.php">
-											<img src="img/btn_cancel.gif"></a>
+											<input type="button" value="취소"></a>
 											</center>
 											</td>
 										</tr>
